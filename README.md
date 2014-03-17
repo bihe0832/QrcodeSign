@@ -22,7 +22,7 @@ qrcodeSign
      2.出现签到失败可以给后台发送一条告警，及时发现和定位异常
      3.自己写一个js二维码
     
-###demo 使用：[点击查看](http://zixie.sinaapp.com)
+###demo 使用：[点击查看](http://bihe0832.sinaapp.com/?p=146)
 
 ###代码结构：
      — conf:二维码签到demo中所有的核心配置，更改配置以后即可为你所用。
