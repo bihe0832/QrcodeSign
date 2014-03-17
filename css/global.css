@@ -1,0 +1,93 @@
+/*全局样式*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,p,blockquote,th,td{margin:0;padding:0;list-style:none;}
+fieldset,img{border:0;}
+address,caption,cite,code,dfn,em,th,var{font-style:normal;font-weight:normal;}
+body { 
+	font-family: "Microsoft Yahei"; 
+	font-size: 16px; 
+	margin: 10px; 
+	background:#070F1D;
+	background-image:url('../images/bg.jpg');
+	background-repeat: no-repeat;
+	background-position:center;
+	background-attachment:fixed;
+} 
+.vote{ 
+	margin:0 auto;
+	width:280px;
+	font-size: 16px; 
+	line-height: 50px;
+	color: #fff;
+	padding:20px;
+	text-align:center;
+}
+#title{ 
+	text-align:center;
+	font-weight: bold; 
+}
+.vote p{ 
+	margin-top:20px;
+	margin-bottom:20px;
+	text-align:center;
+	font-weight: bold; 
+}
+#tips{ 
+	margin-top:10px;
+	margin-bottom:20px;
+	text-align:left;
+	line-height: 20px;
+	font-size: 12px; 
+	font-weight:normal;
+
+}
+#info_up{ 
+	margin-top:-30px;
+	margin-bottom:20px;
+	text-align:left;
+	line-height: 25px;
+	font-size: 14px; 
+	font-weight:normal;
+}
+#info_down{ 
+	margin-top:10px;
+	text-align:left;
+	line-height: 25px;
+	font-size: 14px; 
+	font-weight:normal;
+}
+.vote_list{
+	text-align:left;
+	width:170px;
+	height:25px;
+	font-family: "Microsoft Yahei"; 
+	font-weight: bold; 
+}
+li{
+	padding-left: 3px;
+    border-top: solid 2px #fff;
+	font-weight: bold; 
+	text-align:left;
+}
+li.last{
+	border-bottom: solid 2px #fff;
+}
+.butt{
+	background-color: #ddd;
+    border-color: #888;
+	color: #333;
+	-moz-user-select: none;
+    border: 1px solid transparent;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.42857;
+    margin-bottom: 0;
+    padding: 6px 12px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+	text-decoration: none;
+}
+/*全局样式结束*/
