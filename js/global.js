@@ -31,7 +31,7 @@ function signInit(result){
 				/************************************效果展示代码开始****************************************/
 				eval('var result = {"ecode":1,"msg":"success"}');
 				signFinished(result);
-				exit;
+				return;
 				/************************************效果展示代码结束****************************************/
 				var JSONP=document.createElement( "script");
 				JSONP.type= "text/javascript" ;

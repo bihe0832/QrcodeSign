@@ -48,7 +48,7 @@ window.onload=function(){
 	Meeting.attenderID = '<?php echo $attenderID;?>';
 	/************************************效果展示代码开始****************************************/
 	//以下部分代码为测试效果，最终正式环境请使用exit后面的CGI获取用户状态
-	var type = <?php echo htmlspecialchars($_GET["k"]);?>
+	var type = "<?php echo htmlspecialchars($_GET["k"]);?>";
 	switch(type){
 		case "openid1":
 			//没有报名
@@ -82,7 +82,7 @@ window.onload=function(){
 	}
 	
 	signInit(result);
-	exit;
+	return;
 	/************************************效果展示代码结束****************************************/
 	
 	//为方便本地调试，屏蔽了异步调试请求，当使用者开发完对应CGI以后替换上面代码即可
