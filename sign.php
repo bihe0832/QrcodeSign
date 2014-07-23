@@ -17,7 +17,7 @@ document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
 	WeixinJSBridge.call('hideOptionMenu');
 });	
 </script>
-<link rel="stylesheet" href="./css/global.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="./css/global.css?46" type="text/css" media="screen" />
 </head>
 <body>
 <?php 
@@ -42,7 +42,14 @@ if(!$cookieInfo || $cookieInfo != KEY){
 			<a id="ScanQRCode" class="butt" href='javascript:WeixinJSBridge.invoke("scanQRCode");'>继续扫码</a>
 		</p>
 </div>
-<script type="text/javascript" src="./js/global.js?45" charset="UTF-8"></script>
+<div id="show" class="show" style="display:none">
+	<div class="tipsTitle">腾讯游戏投资公司沙龙</div>
+<HR class="tipsHr">
+	<div class="tipsContent" id="tipsContent">您已经签到成功！</div>
+	<HR class="tipsHr">
+	<div class="tipsBtn" onClick="javascript:hideTips();">确定</div>
+</div>
+<script type="text/javascript" src="./js/global.js?46" charset="UTF-8"></script>
 <script type="text/javascript">
 window.onload=function(){
 	Meeting.attenderID = '<?php echo $attenderID;?>';
@@ -88,7 +95,7 @@ window.onload=function(){
 	//为方便本地调试，屏蔽了异步调试请求，当使用者开发完对应CGI以后替换上面代码即可
 	var JSONP=document.createElement("script");   
 	JSONP.type="text/javascript";   
-	JSONP.src="http://wekf.qq.com/wechat2/app/roadshow/cgi/roadshow.cgi.php?cmd=101001&id=<?php echo $attenderID;?>&callback=signInit";   
+	JSONP.src="http://microdemo.sinaapp.com/qrcodeSign/roadshow.cgi.php?cmd=101001&id=<?php echo $attenderID;?>&callback=signInit";   
 	document.getElementsByTagName("head")[0].appendChild(JSONP); 
 }
 </script>

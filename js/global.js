@@ -13,7 +13,7 @@ function signInit(result){
 		document.getElementById( "status" ).innerHTML="尚未报名" ;
 		document.getElementById( "userSign" ).innerHTML="尚未报名" ;
 		document.getElementById( "userSign" ).onclick= function(){
-          	alert( "没有报名" );
+			showTips( "没有报名" );
        };
 	}else if (result.ecode > -1){
 		document.getElementById( "name" ).innerHTML=result.msg.name;
@@ -22,7 +22,7 @@ function signInit(result){
 			document.getElementById( "is_special" ).innerHTML = Meeting.attenderTypeList[result.msg.is_special]; 
 			document.getElementById( "userSign" ).innerHTML="已经签到" ;
 			document.getElementById( "userSign" ).onclick= function(){
-				alert( "已经签到" );
+				showTips( "已经签到" );
 			};
 		}else if(result.msg.status == 2){
 			document.getElementById( "status" ).innerHTML="尚未签到" ;
@@ -42,7 +42,7 @@ function signInit(result){
 			document.getElementById( "status" ).innerHTML="资料审核不通过";
 			document.getElementById( "userSign" ).innerHTML="审核不通过" ;
 			document.getElementById( "userSign" ).onclick= function(){
-				alert( "资料审核不通过" );
+				showTips( "资料审核不通过" );
 			};
 		}
 	} else {
@@ -51,14 +51,14 @@ function signInit(result){
 }
 function signFinished(result){
 	if(result.ecode ==1){
-		alert("签到成功");
+		showTips("签到成功");
 		document.getElementById("status").innerHTML="已签到";
 		document.getElementById( "userSign" ).innerHTML="已经签到" ;
 		document.getElementById( "userSign" ).onclick= function(){
-				alert( "已经签到" );
+			showTips( "已经签到" );
 		};
 	}else{
-		alert("签到失败，请重试");
+		showTips("签到失败，请重试");
 		WeixinJSBridge.invoke("scanQRCode");
 	}
 }
@@ -68,8 +68,28 @@ function showInfo(id) {
 			'-10000':'服务器错误，请重试！'
 	};
 	if(info[id]){
-		alert(info[id]);
+		showTips(info[id]);
 	}else{
-		alert(info[-10000] + id);
+		showTips(info[-10000] + id);
 	}
+}
+
+function hideTips (){
+	document.getElementById("show").style.display="none";
+}
+
+function showTips (tips){
+	document.getElementById("tipsContent").innerHTML=tips;
+	var x = (document.body.clientWidth - 250) /2 ;
+	document.getElementById("show").style.left = x+"px";
+	var a = tips.length;
+	if(a > 15){
+		document.getElementById("show").style.height = "145px";
+		var y = (document.body.clientHeight - 140) / 2;
+	}else{
+		document.getElementById("show").style.height = "125px";
+		var y = (document.body.clientHeight - 120) / 2;
+	}
+	document.getElementById("show").style.top = y+"px";
+	document.getElementById("show").style.display="";
 }
