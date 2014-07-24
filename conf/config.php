@@ -7,9 +7,9 @@
  */
 
 //签到页面URL
-define("SIGN_URL", "http://microdemo.sinaapp.com/qrcodeSign/sign.php");
+define("SIGN_URL", "http://microdemo.sinaapp.com/QrcodeSign/sign.php");
 //非授权设备扫描二维码跳转地址
-define("REDICT_URL", "http://microdemo.sinaapp.com/qrcodeSign/intro.php");
+define("REDICT_URL", "http://microdemo.sinaapp.com/QrcodeSign/intro.php");
 //在签到页面配置的cookie的值
 define("KEY", "meeting");
 //为工作人员手机授权时访问页面需要添加的key值，建议较长
@@ -34,5 +34,5 @@ define("CONTENT",
 //签到页面下方的小提示
 define("SIGN_TIPS",  "会场提供有免费WIFI；账号：FreeWifi；密码：zixie");
 //签到页面默认的二维码，如果二维码接口故障了，所有人入场券默认指向这里
-define("QRCODE_URL",  "http://microdemo.sinaapp.com/qrcodeSign/images/intro.png");
+define("QRCODE_URL",  "http://microdemo.sinaapp.com/QrcodeSign/images/intro.png");
 ?>
