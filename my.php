@@ -11,7 +11,7 @@ require_once (dirname(__FILE__).'/conf/config.php');
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
 <title><?php echo WEB_TITLE; ?></title>
-<link rel = "Shortcut Icon" href="http://zixie.sinaapp.com/resource/images/zixie_32.ico">
+<link rel = "Shortcut Icon" href="http://game.bihe0832.com/resource/images/zixie_32.ico">
 <script type="text/javascript">
 document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
 	WeixinJSBridge.call('hideToolbar');

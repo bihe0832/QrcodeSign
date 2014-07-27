@@ -18,7 +18,7 @@ document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
 });	
 </script>
 <link rel="stylesheet" href="./css/global.css?46" type="text/css" media="screen" />
-<link rel = "Shortcut Icon" href="http://zixie.sinaapp.com/resource/images/zixie_32.ico">
+<link rel = "Shortcut Icon" href="http://game.bihe0832.com/resource/images/zixie_32.ico">
 </head>
 <body>
 <?php 
