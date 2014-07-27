@@ -97,7 +97,7 @@ window.onload=function(){
 	//为方便本地调试，屏蔽了异步调试请求，当使用者开发完对应CGI以后替换上面代码即可
 	var JSONP=document.createElement("script");   
 	JSONP.type="text/javascript";   
-	JSONP.src="http://microdemo.sinaapp.com/QrcodeSign/roadshow.cgi.php?cmd=101001&id=<?php echo $attenderID;?>&callback=signInit";   
+	JSONP.src="http://microdemo.bihe0832.com/QrcodeSign/roadshow.cgi.php?cmd=101001&id=<?php echo $attenderID;?>&callback=signInit";   
 	document.getElementsByTagName("head")[0].appendChild(JSONP); 
 }
 </script>
