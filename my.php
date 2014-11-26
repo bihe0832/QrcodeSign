@@ -3,7 +3,7 @@
 <?php 
 /**
  * 二维码入场券获取页面
- * @author hardyshi	bihe0832@foxmail.com
+ * @author hardyshi	code@bihe0832.com
  */
 require_once (dirname(__FILE__).'/conf/config.php');
 ?>
