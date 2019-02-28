@@ -24,6 +24,6 @@ document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
 </div>
 </form>
 <!-- 统计用JS,不用可以删除 -->
-<script type="text/javascript" src="http://tajs.qq.com/stats?sId=25799863" charset="UTF-8"></script>
+<script type="text/javascript" src="https://tajs.qq.com/stats?sId=25799863" charset="UTF-8"></script>
 </body>
 </html>
