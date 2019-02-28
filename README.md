@@ -27,7 +27,7 @@ qrcodeSign
 2. 出现签到失败可以给后台发送一条告警，及时发现和定位异常
 3. 自己写一个js二维码
     
-### demo 使用：[点击查看]( http://blog.bihe0832.com/wechar_sign_with_qrcode.html)
+### demo 使用：[点击查看]( https://blog.bihe0832.com/wechar_sign_with_qrcode.html)
 
 ### 代码结构：
 
