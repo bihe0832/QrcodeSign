@@ -1,7 +1,7 @@
 <?php 
 /**
  * 为所用用于签到的设备授权，
- * @author hardyshi code@bihe0832.com
+ * @author zixie code@bihe0832.com
  */
 require_once (dirname(__FILE__).'/conf/config.php'); 
 $key = htmlentities($_GET["k"]);

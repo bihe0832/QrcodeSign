@@ -2,7 +2,7 @@
 /**
  * 会议配置的基本信息
  * 备注：目前绝大部分页面的配置都已经在这里了，只有签到页面获取用户基本信息和发送签到结果的两个CGI需要单独去配置
- * @author	hardyshi	code@bihe0832.com
+ * @author	zixie	code@bihe0832.com
  *
  */
 

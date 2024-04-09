@@ -2,7 +2,7 @@
 require_once (dirname(__FILE__).'/conf/config.php'); 
 /**
  * 来宾签到
- * @author hardyshi code@bihe0832.com
+ * @author zixie code@bihe0832.com
  */
 ?>
 <!doctype html>
